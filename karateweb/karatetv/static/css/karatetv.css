@@ -1,0 +1,46 @@
+h1, h2 {
+    text-align: center;
+        
+}
+
+body {
+    background-color: lightblue;
+  
+
+}
+
+
+.page-header {
+    
+  text-align: center;
+        
+  }
+
+.page-container h1 {
+    text-align: center;
+
+ }
+ .page-footer{
+    block-size: 20%;
+    background-color: #fff;
+ }
+
+
+#wrapper {
+   
+    border: 1px solid black;
+  }
+  #trebisov {
+    display: inline-block;
+    width:500px;
+    height:120px;
+    border: 1px solid red;
+  }
+  #secovce {
+    display: inline-block;
+    width:500px;
+    height:120px;
+    border: 1px solid red;
+     
+  }
+  
