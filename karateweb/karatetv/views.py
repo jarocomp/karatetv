@@ -12,5 +12,11 @@ def treneriaasistenti(request):
 def treningy(request):
     return render(request, 'karatetv/treningy.html', {})
 
+def poriadok(request):
+    return render(request, 'karatetv/poriadok.html', {})
+
+def kontakt(request):
+    return render(request, 'karatetv/kontakt.html', {})
+
 
 
