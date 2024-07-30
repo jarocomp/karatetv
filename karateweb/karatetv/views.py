@@ -18,5 +18,7 @@ def poriadok(request):
 def kontakt(request):
     return render(request, 'karatetv/kontakt.html', {})
 
+def trebisov(request):
+    return render(request, 'karatetv/trebisov.html', {})
 
 

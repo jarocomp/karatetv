@@ -19,32 +19,26 @@ body {
     text-align: center;
 
  }
- .footer{
-   
-    background-color:#333;
-    color: #fff;
-    padding:80px;
-    margin:auto 0;
- }
+
  .site {
 
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-column: minimax(0, 1fr);
+ min-height: 100dvh;  
+ display: grid;
+ grid-template-rows: auto 1fr auto; 
+ grid-template-columns: minmax(0, 1fr);
+
  }
 
- .trebisov h1{
-  color:black;
- 
- }
-
- .secovce h1{
-  color:black;
- 
- }
+ .clubs{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+  
+   }
 
  .trebisov{
+     
+  h1:black;
   width: 200px;
   height: 100px;
   background-color: white;
@@ -53,6 +47,7 @@ body {
  }
 
  .secovce{
+  h1:black;
   width: 200px;
   height: 100px;
   background-color: white;
@@ -60,9 +55,38 @@ body {
   display: inline-block;
   margin-left: 50px;
  }
- .clubs{
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
 
+
+ .footer{
+   
+    background-color:#333;
+    color: #fff;
+    padding:50px;
+    margin:auto 0;
  }
+
+
+.footer-data{
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+
+}
+
+
+.tv{
+    p:white;
+    width: 200px;
+    height: 100px;
+ 
+    display: inline-block;
+   }
+  
+   .se{
+    p:white;
+    width: 200px;
+    height: 100px;
+   
+    display: inline-block;
+    margin-left: 50px;
+   }
