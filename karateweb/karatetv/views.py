@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import PostForm
 
 def domov(request):
     return render(request, 'karatetv/domov.html', {})
@@ -15,10 +16,14 @@ def treningy(request):
 def poriadok(request):
     return render(request, 'karatetv/poriadok.html', {})
 
+def prihlaska(request):
+    return render(request, 'karatetv/prihlaska.html', {})
+
 def kontakt(request):
     return render(request, 'karatetv/kontakt.html', {})
 
 def trebisov(request):
     return render(request, 'karatetv/trebisov.html', {})
 
-
+def admin(request):
+    return render(request, 'admin/base_site.html', {})
