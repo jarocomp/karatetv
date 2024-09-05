@@ -25,5 +25,8 @@ def kontakt(request):
 def trebisov(request):
     return render(request, 'karatetv/trebisov.html', {})
 
+def secovce(request):
+    return render(request, 'karatetv/secovce.html', {})
+
 def admin(request):
     return render(request, 'admin/base_site.html', {})

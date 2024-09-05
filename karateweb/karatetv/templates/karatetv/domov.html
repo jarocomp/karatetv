@@ -1,21 +1,24 @@
 {% extends 'karatetv/base.html' %}
+{% load static %}
 
 
 {% block content %}
 <h1>Karate klub Trebišov</h1>
 </br>
+<center><img src="{% static 'images/karatetv_logo.jpg'  %}" alt="logo" width="150", hight="1500" ></center>
+</br></br>
 <h2>Pobočky </h2>
-  
-     <div class=clubs>
+    <div class=clubs>
      <div class="trebisov">
       <a class="navbar-brand" href="{% url 'trebisov' %} "><h1>Trebišov</h1></a>
         </div>
-    
-   
-      <div class="secovce">
-        <h1>Sečovce</h1>
+      
+       
+    <div class="secovce">
+        <a class="navbar-brand" href="{% url 'secovce' %} "><h1>Sečovce</h1>
      </div>
     </div>
-  
+  </br>
+    <center><img src="{% static 'images/karate3.jpg'  %}" alt="karate3" width="300", hight="300" ></center>
   
 {% endblock %}

@@ -10,6 +10,7 @@ urlpatterns = [
    path('prihlaska', views.prihlaska, name="prihlaska"),
    path('kontakt', views.kontakt, name="kontakt"),
    path('trebisov', views.trebisov, name="trebisov"),
+   path('secovce', views.secovce, name="secovce"),
    path('admin', views.admin, name="admin"),
 
 
