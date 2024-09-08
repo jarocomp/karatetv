@@ -37,10 +37,36 @@
   <main>
    <div class="container">
    {% include 'karatetv/navbar.html' %}
-   {% block content %}
+   <div class ="row">
+   
+    <div class ="col-sm-2">
+      
+      <div class="odkazy_bg"><a href="https://www.karate.sk/"><p>Slovenský zväz karate</p></a>
+    
+      </div>
+      <div class="odkazy_bg"><a href="https://www.sutazekarate.sk/"><p>Súťaže v  karate</p></a>
+    
+      </div>
+   
+    </div> 
+   
+   
+    <div class ="col-sm-8">
+    {% block content %}
 
-   {% endblock %}
+    {% endblock %}
+    
+   </div> 
+
+  
+   
+  
+  </div>
+
+
    </div>
+   
+ 
   
   
   </main>
