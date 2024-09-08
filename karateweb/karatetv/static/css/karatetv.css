@@ -16,7 +16,7 @@ body {
         
   }
 
-.container h1 {
+.container h1,h2 {
     text-align: center;
 
  }
@@ -34,6 +34,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 120px;
+  
+  
   
    }
 
@@ -96,3 +98,12 @@ trebisov h1{
     display: inline-block;
     margin-left: 50px;
    }
+
+   .odkazy_bg {
+    width: 100%;
+    background-color: #25bce5;
+  }
+  .videa_bg {
+    width: 100%;
+    background-color: #25bce5;
+  }
