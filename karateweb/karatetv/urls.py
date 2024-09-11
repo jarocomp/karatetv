@@ -12,7 +12,7 @@ urlpatterns = [
    path('trebisov', views.trebisov, name="trebisov"),
    path('secovce', views.secovce, name="secovce"),
    path('admin', views.admin, name="admin"),
-
+ 
 
 
 ]
