@@ -16,9 +16,6 @@ def treningy(request):
 def dokumenty(request):
     return render(request, 'karatetv/dokumenty.html', {})
 
-def prihlaska(request):
-    return render(request, 'karatetv/prihlaska.html', {})
-
 def kontakt(request):
     return render(request, 'karatetv/kontakt.html', {})
 
