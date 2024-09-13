@@ -1,0 +1,20 @@
+{% extends 'karatetv/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<article class="post">
+    <aside class="actions">
+        <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+            <img src="{% static 'images/pencil.png' %}" alt="pencil"   width="30", hight="30">
+        </a>
+    </aside>
+    {% if post.published_date %}
+        <time class="date">
+            {{ post.published_date }}
+        </time>
+    {% endif %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+</article>
+{% endblock %}
