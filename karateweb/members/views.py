@@ -10,9 +10,15 @@ def login_user(request):
         print(username)
         if user is not None:
             login(request, user)
-            return redirect('onas')
+            return redirect('domov')
         else:
             messages.success(request, "Error login")
             return redirect('login')
     else:
         return render(request, 'authenticate/login.html', {})
+    
+
+def logout_user(request):
+    logout(request)
+    messages.success(request, "You were logged out")
+    return redirect('domov')
