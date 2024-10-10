@@ -20,6 +20,9 @@ body {
     text-align: center;
 
  }
+ a:visited {
+  text-decoration: none;
+}
 
  .site {
 

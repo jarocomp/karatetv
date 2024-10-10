@@ -28,14 +28,14 @@ def trebisov(request):
     return render(request, 'karatetv/trebisov.html', {})
 
 def secovce(request):
-    return render(request, 'karatetv/post_list.html', {})
+    return render(request, 'karatetv/post_list_se.html', {})
 
 def admin(request):
     return render(request, 'admin/base_site.html', {})
 
-def post_list(request):
+def post_list_se(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'karatetv/post_list.html', {'posts': posts})
+    return render(request, 'karatetv/post_list_se.html', {'posts': posts})
 
 
 
@@ -68,6 +68,7 @@ def post_edit(request, pk):
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    #post = Post.objects.get(pk=pk)
     return render(request, 'karatetv/post_detail.html', {'post': post})
 
 
