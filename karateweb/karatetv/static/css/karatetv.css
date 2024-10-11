@@ -20,8 +20,9 @@ body {
     text-align: center;
 
  }
- a:visited {
+ a {
   text-decoration: none;
+  color: black;
 }
 
  .site {
@@ -60,7 +61,10 @@ body {
   display: inline-block;
   margin-left: 50px;
  }
-
+.secovce  a {
+  text-decoration: none;
+  color: black;
+}
 trebisov h1{
     margin: 0;
     padding: 0; 
