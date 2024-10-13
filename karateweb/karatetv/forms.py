@@ -1,9 +1,15 @@
 from django import forms
 
-from .models import Post
+from .models import PostSE, PostTV
 
-class PostForm(forms.ModelForm):
+class PostFormSE(forms.ModelForm):
 
     class Meta:
-        model = Post
+        model = PostSE
+        fields = ('title', 'text', 'image')
+
+class PostFormTV(forms.ModelForm):
+    
+    class Meta:
+        model = PostTV
         fields = ('title', 'text', 'image')

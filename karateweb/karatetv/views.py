@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect,  get_object_or_404
-from .forms import PostForm
+from .forms import PostFormSE, PostFormTV
 from django.utils import timezone
-from .models import Post
+from .models import PostSE, PostTV
 
 def domov(request):
     return render(request, 'karatetv/domov.html', {})
@@ -31,42 +31,79 @@ def admin(request):
     return render(request, 'admin/base_site.html', {})
 
 def post_list_se(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'karatetv/post_list_se.html', {'posts': posts})
+    post = PostSE.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'karatetv/post_list_se.html', {'posts': post})
+
+def post_list_tv(request):
+    post = PostTV.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'karatetv/post_list_tv.html', {'posts': post})
 
 
 
-def post_new(request):
+def post_new_se(request):
     if request.method == "POST":
-        form = PostForm(request.POST,request.FILES)
+        form = PostFormSE(request.POST,request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('post_detail_se', pk=post.pk)
     else:
-        form = PostForm()
-    return render(request, 'karatetv/post_edit.html', {'form': form})
+        form = PostFormSE()
+    return render(request, 'karatetv/post_edit_se.html', {'form': form})
 
-def post_edit(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+def post_new_tv(request):
     if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
+        form = PostFormTV(request.POST,request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
             post.published_date = timezone.now()
             post.save()
-            return redirect('post_detail', pk=post.pk)
+            return redirect('post_detail_tv', pk=post.pk)
     else:
-        form = PostForm(instance=post)
-    return render(request, 'karatetv/post_edit.html', {'form': form})
+        form = PostFormTV()
+    return render(request, 'karatetv/post_edit_tv.html', {'form': form})
 
-def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
+def post_edit_se(request, pk):
+    post = get_object_or_404(PostSE, pk=pk)
+    if request.method == "POST":
+        form = PostFormSE(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail_se', pk=post.pk)
+    else:
+        form = PostFormSE(instance=post)
+    return render(request, 'karatetv/post_edit_se.html', {'form': form})
+
+def post_edit_tv(request, pk):
+    post = get_object_or_404(PostTV, pk=pk)
+    if request.method == "POST":
+        form = PostFormTV(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail_tv', pk=post.pk)
+    else:
+        form = PostFormTV(instance=post)
+    return render(request, 'karatetv/post_edit_tv.html', {'form': form})
+
+
+def post_detail_se(request, pk):
+    post = get_object_or_404(PostSE, pk=pk)
     #post = Post.objects.get(pk=pk)
-    return render(request, 'karatetv/post_detail.html', {'post': post})
+    return render(request, 'karatetv/post_detail_se.html', {'post': post})
+
+def post_detail_tv(request, pk):
+    post = get_object_or_404(PostTV, pk=pk)
+    #post = Post.objects.get(pk=pk)
+    return render(request, 'karatetv/post_detail_tv.html', {'post': post})
 
 
 

@@ -6,7 +6,7 @@
 <article class="post">
     <aside class="actions">
         {% if user.is_authenticated %}
-        <a class="btn btn-secondary" href="{% url 'post_edit' pk=post.pk %}">
+        <a class="btn btn-secondary" href="{% url 'post_edit_se' pk=post.pk %}">
             <img src="{% static 'images/pencil.png' %}" alt="pencil"   width="30", hight="30">
         </a>
         <a class="btn btn-secondary" href="{% url 'post_list_se' %}">
