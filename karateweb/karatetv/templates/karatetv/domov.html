@@ -5,17 +5,17 @@
 {% block content %}
 <h1>Karate club Trebišov</h1>
 </br>
-<center><img src="{% static 'images/karatetv_logo.jpg'  %}" alt="logo" width="150", hight="1500" ></center>
+
 </br></br>
 <h2>Pobočky </h2>
     <div class=clubs>
-     <div class="trebisov">
+     <div class="city-col">
       <a class="navbar-brand" href="{% url 'trebisov' %} "><h1>Trebišov</h1></a>
-        </div>
+    </div>
       
        
-    <div class="secovce">
-        <a class="navbar-brand" href="{% url 'secovce' %} "><h1>Sečovce</h1>
+    <div class="city-col">
+        <a class="navbar-brand" href="{% url 'post_list_se' %} "><h1>Sečovce</h1>
      </div>
     </div>
     
