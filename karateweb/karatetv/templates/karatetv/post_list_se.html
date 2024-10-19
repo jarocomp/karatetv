@@ -22,7 +22,7 @@
         {{ post.published_date }}
     </time>
     <h2><a href="{% url 'post_detail_se' pk=post.pk %}"><span style="font-size:30px;font-weight:12px;color:black;text-decoration:none;"><strong></strong>{{ post.title }}</strong></span></a></span></h2>
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p>{{ post.text|truncatewords:20|linebreaksbr }}</p>
 </article>
 {% if post.image %}
 <img src="{{ post.image.url }}" width=300>
