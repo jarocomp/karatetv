@@ -44,7 +44,7 @@ body {
   
    }
 
-   .city-col{
+  .city-col{
    flex-basis: 40%;
    background: white;
    border-radius: 10px;
