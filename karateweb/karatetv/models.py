@@ -26,6 +26,7 @@ class PostTV(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     image = models.ImageField(null = True, blank=True,upload_to="images/")
 
+   
     def publish(self):
         self.published_date = timezone.now()
         self.save()

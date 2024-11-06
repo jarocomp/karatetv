@@ -31,11 +31,11 @@ def admin(request):
     return render(request, 'admin/base_site.html', {})
 
 def post_list_se(request):
-    post = PostSE.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    post = PostSE.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, 'karatetv/post_list_se.html', {'posts': post})
 
 def post_list_tv(request):
-    post = PostTV.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    post = PostTV.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, 'karatetv/post_list_tv.html', {'posts': post})
 
 
