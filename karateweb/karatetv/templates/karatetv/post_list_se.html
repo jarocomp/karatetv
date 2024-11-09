@@ -25,7 +25,7 @@
     <p>{{ post.text|truncatewords:20|linebreaksbr }}</p>
 </article>
 {% if post.image %}
-<img src="{{ post.image.url }}" width=300>
+<center><img src="{{ post.image.url }}" width=300></center>
 {% endif %}
 
 {% endfor %}
