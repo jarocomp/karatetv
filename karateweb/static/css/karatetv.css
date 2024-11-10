@@ -39,10 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 120px;
-  
-  
-  
-   }
+  }
 
   .city-col{
    flex-basis: 40%;
@@ -105,7 +102,7 @@ trebisov h1{
     display: inline-block;
    }
   
-   .se{
+.se{
     p:white;
     width: 200px;
     height: 100px;
