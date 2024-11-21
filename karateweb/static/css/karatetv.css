@@ -1,11 +1,19 @@
-h1, h2 {
+h1 {
     text-align: center;
+    color: black;
+    font-family: karate;
         
 }
 
+h2, h3 {
+  text-align: center;
+  color: black;
+  
+      
+}
 
 body {
-    background-color: lightblue;
+    background-color:  #fae5d3 ;
 }
 
 
@@ -13,18 +21,33 @@ body {
     
   text-align: center;
   border-bottom: 1px solid #000000;
+
         
-  }
+}
+
+.page-header p {
+    
+  color: black;
+
+        
+}
 
 .container h1,h2 {
     text-align: center;
 
+
  }
+
  a {
   text-decoration: none;
   color: black;
 }
 
+p, p1 {
+
+  color: black;
+
+}
  .site {
 
  min-height: 100dvh;  
@@ -48,6 +71,7 @@ body {
    margin-bottom: 5%;
    padding: 20px 12px;
    box-sizing: border-box;
+   background-color: white;
 
    }
 
@@ -55,9 +79,10 @@ body {
   h1:black;
   width: 200px;
   height: 100px;
-  background-color: white;
+  background-color: #85929e;
   border: 1px solid black;
   display: inline-block;
+
  }
 
  .secovce{
@@ -113,7 +138,7 @@ trebisov h1{
 
 .odkazy_bg {
     width: 100%;
-    background-color: #25bce5;
+    background-color: white;;
   }
 .videa_bg {
     width: 100%;
@@ -130,4 +155,14 @@ trebisov h1{
   
 .foto {
   align-content: center;
+}
+
+@font-face {
+  font-family: 'karate';
+ 
+  src: url('/static/font/karate/Karate.ttf');
+}
+
+.navbar {
+  background-color: white;
 }
