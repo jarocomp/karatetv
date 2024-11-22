@@ -1,168 +1,170 @@
 h1 {
-    text-align: center;
-    color: black;
-    font-family: karate;
-        
+  text-align: center;
+  color: black;
+  font-family: karate;
+
 }
 
 h2, h3 {
-  text-align: center;
-  color: black;
-  
-      
+text-align: center;
+color: black;
+
+
 }
 
 body {
-    background-color:  #fae5d3 ;
+  background-color:  #fae5d3 ;
 }
 
 
 .page-header {
-    
-  text-align: center;
-  border-bottom: 1px solid #000000;
 
-        
+text-align: center;
+border-bottom: 1px solid #000000;
+
+
 }
 
 .page-header p {
-    
-  color: black;
 
-        
+color: black;
+
+
 }
 
 .container h1,h2 {
-    text-align: center;
+  text-align: center;
 
 
- }
+}
 
- a {
-  text-decoration: none;
-  color: black;
+a {
+text-decoration: none;
+color: black;
 }
 
 p, p1 {
 
-  color: black;
+color: black;
 
 }
- .site {
+.site {
 
- min-height: 100dvh;  
- display: grid;
- grid-template-rows: auto 1fr auto; 
- grid-template-columns: minmax(0, 1fr);
+min-height: 100dvh;
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-columns: minmax(0, 1fr);
 
 
- }
+}
 
- .clubs{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
-  }
+.clubs{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
 
-  .city-col{
-   flex-basis: 40%;
-   background: white;
-   border-radius: 10px;
-   margin-bottom: 5%;
-   padding: 20px 12px;
-   box-sizing: border-box;
-   background-color: white;
-
-   }
-
- .trebisov{
-  h1:black;
-  width: 200px;
-  height: 100px;
-  background-color: #85929e;
-  border: 1px solid black;
-  display: inline-block;
+.city-col{
+ flex-basis: 40%;
+ background: white;
+ border-radius: 10px;
+ margin-bottom: 5%;
+ padding: 20px 12px;
+ box-sizing: border-box;
+ background-color: white;
 
  }
 
- .secovce{
-  h1:black;
-  width: 200px;
-  height: 100px;
-  background-color: white;
-  border: 1px solid black;
-  display: inline-block;
-  margin-left: 50px;
- }
+.trebisov{
+h1:black;
+width: 200px;
+height: 100px;
+background-color: #85929e;
+border: 1px solid black;
+display: inline-block;
+
+}
+
+.secovce{
+h1:black;
+width: 200px;
+height: 100px;
+background-color: white;
+border: 1px solid black;
+display: inline-block;
+margin-left: 50px;
+}
 
 trebisov h1{
-    margin: 0;
-    padding: 0; 
+  margin: 0;
+  padding: 0;
 }
- .footer{
-   
-    background-color:#333;
-    color: #fff;
-    min-height: calc(100vh-50px);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  
- }
+.footer{
+
+  background-color:#333;
+  color: #fff;
+  min-height: calc(100vh-50px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
 
 
 .footer-data{
- display: flex;
- justify-content: center;
- margin-top: 10px;
+display: flex;
+justify-content: center;
+margin-top: 10px;
 
 }
 
 
 .tv{
-    p:white;
-    width: 200px;
-    height: 100px;
- 
-    display: inline-block;
-   }
-  
+  p:white;
+  width: 200px;
+  height: 100px;
+
+  display: inline-block;
+ }
+
 .se{
-    p:white;
-    width: 200px;
-    height: 100px;
-   
-    display: inline-block;
-    margin-left: 50px;
-   }
+  p:white;
+  width: 200px;
+  height: 100px;
+
+  display: inline-block;
+  margin-left: 50px;
+ }
 
 .odkazy_bg {
-    width: 100%;
-    background-color: white;;
-  }
-.videa_bg {
-    width: 100%;
-    background-color: #25bce5;
-  }
+  width: 100%;
+  background-color: white;
+  text-align: center;
 
-  .aside { 
-    position: relative;
-    float:left;
-    width:170px; 
-    top: 0px;
-    bottom: 0px;
-  }
-  
+}
+.videa_bg {
+  width: 100%;
+  background-color: #25bce5;
+}
+
+.aside {
+  position: relative;
+  float:left;
+  width:170px;
+  top: 0px;
+  bottom: 0px;
+}
+
 .foto {
-  align-content: center;
+align-content: center;
 }
 
 @font-face {
-  font-family: 'karate';
- 
-  src: url('/static/font/karate/Karate.ttf');
+font-family: 'karate';
+
+src: url('/static/font/karate/Karate.ttf');
 }
 
 .navbar {
-  background-color: white;
+background-color: white;
 }
